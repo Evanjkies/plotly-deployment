@@ -83,7 +83,7 @@ function buildCharts(sample) {
       {
         x: sampleValues.slice(0,10).reverse(),
         y: yticks,
-        text: otuLabels.slice(0,10)reverse(),
+        text: otuLabels.slice(0,10).reverse(),
         type: "bar",
         orientation: "h"
       }
@@ -98,8 +98,8 @@ function buildCharts(sample) {
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
-  });
-}
+//  });
+// }
 
 // DELIVERABLE 2
 // Bar and Bubble charts
@@ -138,8 +138,6 @@ function buildCharts(sample) {
 
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
-  });
-}
 
 // DELIVERABLE 3
 // Create the buildChart function.
